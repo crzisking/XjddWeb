@@ -6,6 +6,7 @@ import 'element-plus/dist/index.css';
 import router from  './router'
 import {createPinia} from "pinia"; // 引入
 
+
 const pinia = createPinia();// 路由
 createApp(App)
     .use(ElementPlus)

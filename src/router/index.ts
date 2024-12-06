@@ -5,7 +5,7 @@ const routes = [
     {
         path: '/',
         name: 'Home',
-        component: () => import('../App.vue'), // 懒加载组件
+        component: () => import('../views/mainPage.vue'), // 懒加载组件
     },
 ];
 
