@@ -1,10 +1,19 @@
 <template>
+<a-layout>
+  <a-layout-header>
+    <a-typography-text>
+      clg洗脚大队
+    </a-typography-text>
+  </a-layout-header>
+  <a-layout-content>
+  </a-layout-content>
+  <a-layout-footer></a-layout-footer>
+</a-layout>
 </template>
 
 <script setup lang="ts">
 import {onUnmounted, ref} from 'vue';
 // import { useRouter } from 'vue-router';
-//test
 const isZooming = ref(false);
 // const router = useRouter();
 
@@ -27,15 +36,4 @@ onUnmounted(() => {
 </script>
 
 <style scoped>
-@keyframes zoomInOut {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.5);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
 </style>
