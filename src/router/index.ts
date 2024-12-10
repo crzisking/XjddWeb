@@ -16,6 +16,16 @@ const routes = [
         path: '/rank',
         name: 'rank',
         component: () => import('../views/RankingListView/index.vue'), // 懒加载组件
+    },
+    {
+        path: '/community',
+        name: 'community',
+        component: () => import('../views/CommunityView/index.vue'), // 懒加载组件
+    },
+    {
+        path: '/test',
+        name: 'test',
+        component: () => import('../views/TestView/index.vue'), // 懒加载组件
     }
 ];
 
