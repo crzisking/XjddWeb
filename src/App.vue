@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import {GetMenuList} from "./api/init/init.ts";
-import {MenuItem, useMenuStore} from "./stores/MenuStore.ts";
+import {MenuItem,useMenuStore} from "./stores/MenuStore.ts";
 import {onMounted} from "vue";
 const MenuStore =useMenuStore()
 onMounted(

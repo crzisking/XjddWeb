@@ -1,4 +1,4 @@
-// api/init/init.ts
+import request from "../request.ts";
 interface GetMenuResponse {
     code: number;
     msg: string;
@@ -7,7 +7,8 @@ interface GetMenuResponse {
 
 // 定义 GetMenuList 函数，返回类型为 GetMenuResponse
 export const GetMenuList = async (): Promise<GetMenuResponse> => {
-    // 模拟 API 请求
-    const response = await fetch('/api/menu'); // 假设这是菜单 API
-    return await response.json(); // 返回菜单数据
+    return await request({
+        url: '/api/menu',
+        method: 'get'
+    })
 };

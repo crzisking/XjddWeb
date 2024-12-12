@@ -2,13 +2,13 @@
 import { defineStore } from 'pinia';
 
 // 定义菜单项的类型
-export interface MenuItem {
+interface MenuItem {
     id: number;
     menuName: string;
     path: string;
 }
 
-export const useMenuStore = defineStore({
+const useMenuStore = defineStore({
     id: 'menuStore',
     state: () => ({
         menuList: [] as MenuItem[], // 使用 `MenuItem[]` 来定义 `menuList` 的类型
@@ -22,3 +22,8 @@ export const useMenuStore = defineStore({
         },
     },
 });
+
+export {
+    type MenuItem,
+    useMenuStore,
+}
